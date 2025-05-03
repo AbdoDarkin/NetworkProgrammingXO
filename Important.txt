@@ -1,0 +1,17 @@
+📦 xoapp
+│
+├── 📁 view               <-- واجهة المستخدم (Views)
+│   ├── MainMenu.java              <-- القائمة الرئيسية
+│   ├── SinglePlayerView.java      <-- نافذة اللعب الفردي
+│   ├── MultiplayerView.java       <-- نافذة اللعب الجماعي
+│   └── MultiplayerLauncher.java   <-- إطلاق السيرفر ونافذتين اللاعبين
+│
+├── 📁 viewmodel         <-- منطق اللعبة (ViewModel)
+│   └── GameViewModel.java         <-- يحتوي منطق اللعبة (X/O، التبديل، الفائز)
+│
+├── 📁 network           <-- الاتصال الشبكي (Sockets)
+│   ├── Server.java                 <-- السيرفر يستقبل اللاعبين
+│   ├── ServerHandler.java         <-- يتعامل مع لاعب ويرسل الحركات
+│   └── Client.java                <-- يتصل بالسيرفر ويرسل/يستقبل الحركات
+│
+└── MainMenu.java        <-- نقطة البداية (تشغيل الواجهة)
